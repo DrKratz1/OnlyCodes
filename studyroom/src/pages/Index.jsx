@@ -2,9 +2,10 @@ import React from "react"
 import { Link } from "react-router-dom"
 import Sidebar from "../components/Sidebar"
 
-const Index = () => {
+function Index() {
   return (
     <div>
+      <Sidebar />
       <h1 className="font-bold text-center text-4xl">Index</h1>
       <ul
         className="text-center my-2 text-blue-500 underline
@@ -14,14 +15,13 @@ const Index = () => {
         </li>
 
         <li>
-          <Link to="/signup">Sign up</Link>
+          <Link to="/login">Login</Link>
         </li>
 
         <li>
           <Link to="/sidebar">Side bar</Link>
         </li>
       </ul>
-      <Sidebar />
     </div>
   )
 }
