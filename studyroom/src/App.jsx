@@ -9,8 +9,8 @@ function App() {
     <div className="app">
       <TaskBoxes />
       <Sidebar />
-      <Footer />
       <SignupForm />
+      <Footer />
     </div>
   )
 }
