@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="app">
       <Sidebar />
+      <Footer />
       <SignupForm />
     </div>
   )
