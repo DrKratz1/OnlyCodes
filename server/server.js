@@ -5,6 +5,9 @@ const mongoose = require("mongoose")
 const userRoutes = require("./routes/userRoutes")
 require("dotenv").config() // Covered later
 
+// Import database model
+const User = require('./models/User')
+
 // Create an Express application
 const app = express()
 const PORT = process.env.PORT || 5000
@@ -29,3 +32,13 @@ mongoose
   .catch((error) => {
     console.log(error)
   })
+
+
+app.get('/users', async (req, res) => {
+  try {
+      const users = await User.find({});
+      res.status(200).json(users);
+  } catch(error) {
+      res.status(500).json({message:error.message});
+  }
+});
