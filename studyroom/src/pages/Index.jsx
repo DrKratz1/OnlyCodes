@@ -1,10 +1,14 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import Sidebar from "../components/Sidebar"
+import { useLocalStorage } from "../hooks/localStorage"
 
-const Index = () => {
+function Index() {
+  const [user, _] = useLocalStorage("user", null)
+
   return (
     <div>
+      <Sidebar />
       <h1 className="font-bold text-center text-4xl">Index</h1>
       <ul
         className="text-center my-2 text-blue-500 underline
@@ -14,14 +18,15 @@ const Index = () => {
         </li>
 
         <li>
-          <Link to="/signup">Sign up</Link>
+          <Link to="/login">Login</Link>
         </li>
 
         <li>
           <Link to="/sidebar">Side bar</Link>
         </li>
+
+        <div>Username: {user}</div>
       </ul>
-      <Sidebar />
     </div>
   )
 }
