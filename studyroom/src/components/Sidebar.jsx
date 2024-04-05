@@ -4,7 +4,7 @@ function Sidebar() {
   return (
     <div
       className="fixed top-0 left-0 h-screen w-40 m-0
-    flex flex-col bg-blue-950 shadow-lg items-center">
+    flex flex-col bg-gradient-to-r from-blue-950 to-blue-800 shadow-lg items-center">
       <a href="/">
         <button>
           <img src="/assets/logo.jpeg" alt="" />
