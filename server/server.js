@@ -39,7 +39,7 @@ app.get("/api/tasks", async (req, res) => {
   try {
     const tasks = await Task.find({})
     res.status(200).json(tasks)
-  } catch(error) {
+  } catch (error) {
     res.status(500).send("Error fetching tasks")
   }
 })
@@ -56,8 +56,8 @@ app.get("/api/user/:id", async (req, res) => {
 
 app.get("/api/tasks/:username", async (req, res) => {
   try {
-    const {username} = req.params
-    const task = await Task.find({username: username})
+    const { username } = req.params
+    const task = await Task.find({ username: username })
     res.status(200).json(task)
   } catch (error) {
     res.status(500).json({ message: error.message })
