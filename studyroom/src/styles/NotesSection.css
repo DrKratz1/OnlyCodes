@@ -1,0 +1,20 @@
+
+.NoteHeader{
+
+    font-size: larger;
+  }
+
+  textarea {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 150px;
+    background: #fbf4ed;
+    transform: translate(100%, 25%);
+    color: #333;
+    padding: 120px;
+    margin: 20px auto; 
+    outline: none;
+    border-radius: 5px;
+    font: bold;
+  }
