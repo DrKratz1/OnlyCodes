@@ -6,8 +6,9 @@ import '../styles/styles.css';
 function Header() {
   return (
     <nav>
-      <img src="/assets/logo.jpeg" alt="Logo" className="logo"></img>
-
+      <Link to="/">
+        <img src="/assets/logo.jpeg" alt="Logo" className="logo" />
+      </Link>
       <h1 className ="quote text-white text-3xl font-semibold">"The only time success comes before work is in the dictionary"</h1>
       <ul>
         <li>
