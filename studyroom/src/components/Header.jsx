@@ -2,9 +2,11 @@ import React from "react"
 import { Link } from "react-router-dom"
 import "@fontsource/inter/600.css";
 import '../styles/styles.css';
+import AddTaskButton from "./AddTaskButton";
 
 function Header() {
   return (
+    <div>
     <nav>
       <Link to="/">
         <img src="/assets/logo.jpeg" alt="Logo" className="logo" />
@@ -16,6 +18,11 @@ function Header() {
         </li>
       </ul>
     </nav>
+    
+    <div>
+        <AddTaskButton />
+    </div>
+    </div>
   );
 }
 
