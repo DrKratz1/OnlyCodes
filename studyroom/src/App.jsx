@@ -12,6 +12,7 @@ import SignupForm from "./components/SignupForm.jsx"
 import Index from "./pages/Index.jsx"
 import Login from "./pages/Login.jsx"
 import Header from "./components/Header.jsx"
+import TaskBoxes from "./components/TaskBoxes.jsx"
 
 function App() {
   return (
@@ -24,7 +25,9 @@ function App() {
         <Route exact path="/signup" element={<SignupForm />} />
 
         <Route exact path="/sidebar" element={<Sidebar />} />
-        <Route exact path ="/Footer" element = {<Footer/>} />
+
+        <Route exact path="/TaskBoxes" element={<TaskBoxes />} />
+        
       </Routes>
     </Router>
   )
