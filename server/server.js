@@ -3,7 +3,9 @@ const express = require("express")
 const cors = require("cors")
 const mongoose = require("mongoose")
 const userRoutes = require("./routes/userRoutes")
+const taskRoutes = require("./routes/taskRoutes")
 const User = require("./models/User")
+const Task = require("./models/Task")
 require("dotenv").config() // Covered later
 
 // Create an Express application
@@ -18,6 +20,7 @@ app.use(express.json())
 // Note that the default route is /api/users
 // i.e. full route is localhost:5000/api/users/signup
 app.use("/api/users", userRoutes)
+app.use("/api/tasks", taskRoutes)
 
 app.get("/", (req, res) => {
   res.send("Hello Worldy")
@@ -32,11 +35,30 @@ app.get("/api/users", async (req, res) => {
   }
 })
 
+app.get("/api/tasks", async (req, res) => {
+  try {
+    const tasks = await Task.find({})
+    res.status(200).json(tasks)
+  } catch (error) {
+    res.status(500).send("Error fetching tasks")
+  }
+})
+
 app.get("/api/user/:id", async (req, res) => {
   try {
     const { id } = req.params
     const user = await User.findById(id)
     res.status(200).json(user)
+  } catch (error) {
+    res.status(500).json({ message: error.message })
+  }
+})
+
+app.get("/api/tasks/:username", async (req, res) => {
+  try {
+    const { username } = req.params
+    const task = await Task.find({ username: username })
+    res.status(200).json(task)
   } catch (error) {
     res.status(500).json({ message: error.message })
   }
