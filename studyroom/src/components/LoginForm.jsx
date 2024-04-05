@@ -1,10 +1,12 @@
 import React, { useState } from "react"
 import axios from "axios"
 import { data } from "autoprefixer"
+import { useLocalStorage } from "../hooks/localStorage"
 
 function Login() {
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
+  const [, setUser] = useLocalStorage("user", null)
   let userLoggedIn = false
 
   const handleSubmit = async (e) => {
@@ -23,6 +25,7 @@ function Login() {
         ) {
           userLoggedIn = true
           console.log(`Successfully logged in as ${username}`)
+          setUser(username)
           window.location.href = "/"
         }
       }

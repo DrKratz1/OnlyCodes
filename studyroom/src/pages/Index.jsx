@@ -1,8 +1,11 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import Sidebar from "../components/Sidebar"
+import { useLocalStorage } from "../hooks/localStorage"
 
 function Index() {
+  const [user, _] = useLocalStorage("user", null)
+
   return (
     <div>
       <Sidebar />
@@ -21,6 +24,8 @@ function Index() {
         <li>
           <Link to="/sidebar">Side bar</Link>
         </li>
+
+        <div>Username: {user}</div>
       </ul>
     </div>
   )
