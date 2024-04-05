@@ -1,14 +1,18 @@
-// Import the user model refer User.js
-const User = require("../models/User")
+// Import the user model refer Task.js
+const Task = require("../models/Task")
 
 
 const addTask = async (req, res) => {
-    const { username, title, minute, second, subtask} = req.body
+    const { username, title, minute, second } = req.body
 
-    timeLength = parseInt(minute) * 60 + second
+    let timeLength = parseInt(minute) * 60 + parseInt(second)
 
     try {
-        const newTask = new Task({ username, title, timeLength, subtask })
+        const newTask = new Task({ 
+            username: username, 
+            title: title, 
+            time_length: timeLength })
+
         await newTask.save()
         res.status(201).send("Task added successfully")
     } catch(error) {

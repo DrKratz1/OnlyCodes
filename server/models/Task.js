@@ -17,10 +17,6 @@ const taskSchema = new mongoose.Schema(
             required: true,
         }, 
 
-        subtask: {
-            type: [String],
-            default: [],
-        },
     }
 )
 
