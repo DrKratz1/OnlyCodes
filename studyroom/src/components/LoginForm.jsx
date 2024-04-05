@@ -47,10 +47,10 @@ function Login() {
 
   return (
     <div>
-      <h1 className="flex text-3xl my-20 justify-center">Login</h1>
+      <h1 className="flex text-3xl my-8 justify-center">Login</h1>
       <form onSubmit={handleSubmit} className="justify-center">
         <div className="flex flex-col mb-5 mx-auto items-center">
-          <div>
+          <div className="pb-2">
             <label>Username: </label>
             <input
               type="text"
@@ -60,7 +60,7 @@ function Login() {
               className="bg-transparent border-2 rounded-md focus:outline-green-500"
             />
           </div>
-          <div>
+          <div className="pb-2">
             <label>Password: </label>
             <input
               type="password"
@@ -73,7 +73,7 @@ function Login() {
           <button
             type="button"
             onClick={handleSubmit}
-            className="text-center bg-violet-200 rounded-md px-3 py-1">
+            className="text-center bg-violet-200 rounded-md px-3 py-1 shadow-md border-none">
             Submit
           </button>
         </div>

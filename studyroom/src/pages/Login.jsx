@@ -8,8 +8,10 @@ function Login() {
   return (
     <div>
       <Header />
-
-      <LoginForm />
+      <Sidebar />
+      <div id = "rectangle" className = "flex justify-center items-center rounded-xl border-4 border-blue-900" >
+        <LoginForm />
+      </div>
 
       <Footer />
     </div>
