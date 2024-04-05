@@ -8,8 +8,10 @@ function Login() {
   return (
     <div>
       <Sidebar />
-      <Footer />
+      
       <LoginForm />
+
+      <Footer />
     </div>
   )
 }

@@ -7,6 +7,7 @@ function NewTask() {
   return (
     <div>
       <Header title = "Task 1"/>
+      
       <Footer />
     </div>
   )
