@@ -3,7 +3,7 @@ import React from "react"
 function TaskBoxes() {
   return (
     <div className = "h-screen flex items-center justify-center">
-      <a href = "https://www.youtube.com/watch?v=b0pkpcD8Ms4">
+      <a href = "/NewTask">
         <button class="cursor-pointer px-20 h-96 rounded text-white text-xl font-extrabold
         hover:animate-bounce">
         NEW TASK
