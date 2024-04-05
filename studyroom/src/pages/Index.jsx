@@ -12,6 +12,7 @@ function Index() {
   return (
     <div>
       <Header title = '"The only time success comes before work is in the dictionary"'/> 
+      <Stopwatch />
       <TaskBoxes /> 
       <Footer />
       <h1 className="font-bold text-center text-4xl">Index</h1>
