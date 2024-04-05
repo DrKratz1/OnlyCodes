@@ -11,7 +11,7 @@ function Index() {
 
   return (
     <div>
-      <Header />
+      <Header title='"The only time success comes before work is in the dictionary"' />
       <TaskBoxes />
       <Footer />
       <div className="flex justify-center">Username: {user}</div>

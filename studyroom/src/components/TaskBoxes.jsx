@@ -22,7 +22,7 @@ function TaskBoxes() {
       <a href = "/NewTask">
           <button class="cursor-pointer px-20 h-96 rounded text-white text-xl font-extrabold">
           NEW TASK
-          <img src="/assets/TaskPic3.jpeg" alt = "TaskPic3" width = "200"
+          <img src="/assets/TaskPic4.jpg" alt = "TaskPic4" width = "200"
           className="rounded-md outline-3 outline-blue-950"/>
           
           </button>
@@ -30,7 +30,7 @@ function TaskBoxes() {
       <a href = "/NewTask">
           <button class="cursor-pointer px-20 h-96 rounded text-white text-xl font-extrabold">
           NEW TASK
-          <img src="/assets/TaskPic4.jpeg" alt = "TaskPic4" width = "200"
+          <img src="/assets/TaskPic5.jpg" alt = "TaskPic5" width = "200"
           className="rounded-md outline-3 outline-blue-950"/>
           
           </button>
@@ -38,7 +38,7 @@ function TaskBoxes() {
       <a href = "/NewTask">
           <button class="cursor-pointer px-20 h-96 rounded text-white text-xl font-extrabold">
           NEW TASK
-          <img src="/assets/TaskPic6.jpeg" alt = "TaskPic6" width = "200"
+          <img src="/assets/TaskPic6.png" alt = "TaskPic6" width = "200"
           className="rounded-md outline-3 outline-blue-950"/>
           
           </button>
@@ -46,7 +46,7 @@ function TaskBoxes() {
       <a href = "/NewTask">
           <button class="cursor-pointer px-20 h-96 rounded text-white text-xl font-extrabold">
           NEW TASK
-          <img src="/assets/TaskPic7.jpeg" alt = "TaskPic7" width = "200"
+          <img src="/assets/TaskPic7.png" alt = "TaskPic7" width = "200"
           className="rounded-md outline-3 outline-blue-950"/>
           
           </button>
@@ -54,7 +54,7 @@ function TaskBoxes() {
       <a href = "/NewTask">
           <button class="cursor-pointer px-20 h-96 rounded text-white text-xl font-extrabold">
           NEW TASK
-          <img src="/assets/TaskPic8.jpeg" alt = "TaskPic8" width = "200"
+          <img src="/assets/TaskPic8.png" alt = "TaskPic8" width = "200"
           className="rounded-md outline-3 outline-blue-950"/>
           
           </button>
