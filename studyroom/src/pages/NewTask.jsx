@@ -6,7 +6,7 @@ import Footer from "../components/Footer"
 function NewTask() {
   return (
     <div>
-      <Header />
+      <Header title = "Task 1"/>
       <Footer />
     </div>
   )

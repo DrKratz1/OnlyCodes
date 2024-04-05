@@ -8,8 +8,7 @@ import TaskBoxes from "../components/TaskBoxes"
 function Index() {
   return (
     <div>
-      <Header /> 
-      
+      <Header title = '"The only time success comes before work is in the dictionary"'/> 
       <TaskBoxes /> 
       <Footer />
     </div>
