@@ -55,3 +55,16 @@ ul li a:hover {
     color: #474973;
 }
 
+.TaskPic {
+    height: 96px; 
+    width: auto;
+}
+
+#image-track {
+    display: flex;
+    gap: 4vmin;
+    position absolute;
+    left: 50%;
+    right: 50%;
+
+}
