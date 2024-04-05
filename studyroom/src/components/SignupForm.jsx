@@ -14,6 +14,7 @@ function SignupForm() {
         password,
       })
       console.log("Signup Success", res.data)
+      window.location.href = "/login"
     } catch (error) {
       if (error.response) {
         console.error("Signup Error:", error.response.data)
@@ -26,35 +27,38 @@ function SignupForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="flex flex-col mb-10 mx-auto">
-        <div>
-          <label className="">Username:</label>
-          <input
-            type="text"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            required
-            className="p-0 bg-transparent border-2 rounded-md focus:outline-none"
-          />
+    <div>
+      <h1 className="flex text-3xl my-20 justify-center">Sign Up</h1>
+      <form onSubmit={handleSubmit} className="justify-center">
+        <div className="flex flex-col mb-5 mx-auto items-center">
+          <div className="pb-2">
+            <label className="">Username: </label>
+            <input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              required
+              className="p-0 bg-transparent border-2 rounded-md focus:outline-none"
+            />
+          </div>
+          <div className="pb-2">
+            <label className="">Password: </label>
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+              className="p-0 bg-transparent border-2 rounded-md focus:outline-none"
+            />
+          </div>
+          <button
+            type="submit"
+            className="text-center bg-violet-200 rounded-md px-3 py-1">
+            Signup
+          </button>
         </div>
-        <div className="flex justify-center">
-          <label className="">Password: </label>
-          <input
-            type="text"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-            className="p-0 bg-transparent border-2 rounded-md focus:outline-none"
-          />
-        </div>
-      </div>
-      <button
-        type="submit"
-        className="text-center bg-violet-200 rounded-md px-3 py-1">
-        Signup
-      </button>
-    </form>
+      </form>
+    </div>
   )
 }
 

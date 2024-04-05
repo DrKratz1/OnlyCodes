@@ -47,6 +47,7 @@ function Login() {
 
   return (
     <div>
+      <h1 className="flex text-3xl my-20 justify-center">Login</h1>
       <form onSubmit={handleSubmit} className="justify-center">
         <div className="flex flex-col mb-5 mx-auto items-center">
           <div>
@@ -69,7 +70,10 @@ function Login() {
               className="bg-transparent border-2 rounded-md focus:outline-green-500"
             />
           </div>
-          <button type="button" onClick={handleSubmit}>
+          <button
+            type="button"
+            onClick={handleSubmit}
+            className="text-center bg-violet-200 rounded-md px-3 py-1">
             Submit
           </button>
         </div>
