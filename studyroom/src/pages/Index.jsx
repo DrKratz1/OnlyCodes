@@ -14,7 +14,7 @@ function Index() {
       <Header title = '"The only time success comes before work is in the dictionary"'/> 
       <Stopwatch />
       <TaskBoxes /> 
-      <Footer />
+      
       <h1 className="font-bold text-center text-4xl">Index</h1>
       <ul
         className="text-center my-2 text-blue-500 underline
@@ -33,6 +33,8 @@ function Index() {
 
         <div>Username: {user}</div>
       </ul>
+
+      <Footer />
     </div>
   )
 }

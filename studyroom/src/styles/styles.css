@@ -63,8 +63,8 @@ ul li a:hover {
 #image-track {
     display: flex;
     gap: 4vmin;
-    position absolute;
-    left: 50%;
-    right: 50%;
-
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    top: 50%; transform: translate(0%,10%);
 }
