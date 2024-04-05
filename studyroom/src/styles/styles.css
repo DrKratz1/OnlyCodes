@@ -60,21 +60,6 @@ ul li a:hover {
     width: auto;
 }
 
-#image-track > .image {
-    width: 40vmin;
-    height: 56vmin;
-    object-fit:cover;
-    object-position: 100% 50%;
-}
-
-#image-track {
-    display: flex;
-    gap: 4vmin;
-    position: absolute;
-    left: 30%;
-    top: 20%; transform: translate(0%,10%);
-}
-
 .footer {
     position: absolute;
     bottom: 0;

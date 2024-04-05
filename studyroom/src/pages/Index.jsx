@@ -5,15 +5,15 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import TaskBoxes from "../components/TaskBoxes"
 import { useLocalStorage } from "../hooks/localStorage"
+import TaskCarousel from "../components/TaskCarousel"
 
 function Index() {
   const [user, _] = useLocalStorage("user", null)
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Header title='"The only time success comes before work is in the dictionary"' />
-      <TaskBoxes />
-      
+      <TaskCarousel />
       <Footer />
     </div>
   )

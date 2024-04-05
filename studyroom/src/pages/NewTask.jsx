@@ -7,13 +7,15 @@ import Stopwatch from "../components/Stopwatch"
 function NewTask() {
   return (
     <div>
-      <Header title = "Task 1"/>
-      <h1><Stopwatch /></h1>     
-      
-    <div>
-      <Footer />
+      <Header title="Task 1" />
+      <h1>
+        <Stopwatch />
+      </h1>
+
+      <div>
+        <Footer />
+      </div>
     </div>
-  </div>
   )
 }
 

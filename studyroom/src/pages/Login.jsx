@@ -1,14 +1,14 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import Sidebar from "../components/Sidebar"
+import Header from "../components/Header"
 import Footer from "../components/Footer"
 import LoginForm from "../components/LoginForm"
 
 function Login() {
   return (
     <div>
-      <Sidebar />
-      
+      <Header />
+
       <LoginForm />
 
       <Footer />
