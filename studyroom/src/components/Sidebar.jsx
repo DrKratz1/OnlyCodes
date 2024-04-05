@@ -10,10 +10,12 @@ function Sidebar() {
           <img src="/assets/logo.jpeg" alt="" />
         </button>
       </a>
-      <a href="/login">
-        <button className=" bg-yellow-50 px-4 rounded-lg">LOGIN</button>
+      <a href="/login" className="pb-4">
+        <button className=" bg-yellow-50 px-4 py-2 rounded-lg">LOGIN</button>
       </a>
-      <i>C</i>
+      <a href="/signup">
+        <button className=" bg-yellow-50 px-4 py-2 rounded-lg">Sign Up</button>
+      </a>
     </div>
   )
 }

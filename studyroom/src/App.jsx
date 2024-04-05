@@ -8,7 +8,7 @@ import {
 
 import Sidebar from "./components/Sidebar.jsx"
 import Footer from "./components/Footer.jsx"
-import SignupForm from "./components/SignupForm.jsx"
+import Signup from "./pages/Signup.jsx"
 import Index from "./pages/Index.jsx"
 import Login from "./pages/Login.jsx"
 import Header from "./components/Header.jsx"
@@ -23,7 +23,7 @@ function App() {
         <Route exact path ="/Header" element = {<Header/>} />
         <Route exact path="/login" element={<Login />} />
 
-        <Route exact path="/signup" element={<SignupForm />} />
+        <Route exact path="/signup" element={<Signup />} />
 
         <Route exact path="/sidebar" element={<Sidebar />} />
 
