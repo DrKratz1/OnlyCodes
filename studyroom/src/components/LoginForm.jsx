@@ -6,7 +6,7 @@ import { useLocalStorage } from "../hooks/localStorage"
 function Login() {
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
-  const [, setUser] = useLocalStorage("user", null)
+  const [, setUser] = useLocalStorage("username", null)
   let userLoggedIn = false
 
   const handleSubmit = async (e) => {

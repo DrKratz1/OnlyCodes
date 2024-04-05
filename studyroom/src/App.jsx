@@ -11,6 +11,7 @@ import Footer from "./components/Footer.jsx"
 import Signup from "./pages/Signup.jsx"
 import Index from "./pages/Index.jsx"
 import Login from "./pages/Login.jsx"
+import AddTask from "./pages/AddTask.jsx"
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
         <Route exact path="/signup" element={<Signup />} />
 
         <Route exact path="/sidebar" element={<Sidebar />} />
+
+        <Route exact path="/add_task" element={<AddTask />} />
       </Routes>
     </Router>
   )

@@ -4,7 +4,7 @@ import Sidebar from "../components/Sidebar"
 import { useLocalStorage } from "../hooks/localStorage"
 
 function Index() {
-  const [user, _] = useLocalStorage("user", null)
+  const [user, _] = useLocalStorage("username", null)
 
   return (
     <div>
