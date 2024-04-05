@@ -32,18 +32,28 @@ function TaskBoxes() {
 
   if (taskList.length == 0) {
     return (
-      <div>
+      <div className="flex justify-center">
         No tasks available. Create your first task and start a nice day.
       </div>
     )
   }
 
-  let appendedTasks = <></>
+  let appendedTasks = ""
 
+  for (let i = 0; i < taskList.length; i++) {
+    console.log(taskList[i].title)
+    console.log(taskList[i].time_length)
+    appendedTasks += `
+      <div classname="flex flex-nowrap">
+        Task: ${ taskList[i].title } <br />
+        Time Length (in seconds): ${ taskList[i].time_length }
+      </div>`
+  }
+
+console.log(appendedTasks)
 
   return (
-    <div>
-      { JSON.stringify(taskList) }
+    <div dangerouslySetInnerHTML={{__html: appendedTasks}} className="flex justify-center">
     </div>
   )
 }
