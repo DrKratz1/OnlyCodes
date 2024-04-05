@@ -66,5 +66,12 @@ ul li a:hover {
     position: absolute;
     left: 30%;
     right: 30%;
-    top: 50%; transform: translate(0%,10%);
+    top: 20%; transform: translate(0%,10%);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
 }
