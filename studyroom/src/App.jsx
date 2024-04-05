@@ -24,6 +24,7 @@ function App() {
         <Route exact path="/signup" element={<SignupForm />} />
 
         <Route exact path="/sidebar" element={<Sidebar />} />
+        <Route exact path ="/Footer" element = {<Footer/>} />
       </Routes>
     </Router>
   )
