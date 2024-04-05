@@ -8,9 +8,12 @@ function NewTask() {
   return (
     <div>
       <Header title = "Task 1"/>
-      <Stopwatch />
+      <h1><Stopwatch /></h1>     
+      
+    <div>
       <Footer />
     </div>
+  </div>
   )
 }
 

@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "react-router-dom"
 import "@fontsource/inter/600.css";
 import '../styles/styles.css';
-import AddTaskButton from "./AddTaskButton";
 
 function Header({ title }) {
   return (

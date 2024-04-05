@@ -1,5 +1,52 @@
-* {
-    padding:0;
-    margin: 0;
-    box-sizing: border-box;
+.container {
+    background-color: #f0f9ff;
+    position:fixed;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 30%;
+    width: 20%; /* Set width to 100% */
+    max-width: 20%; /* Adjusted max-width to 15% of the viewport width */
+    padding: 0.9375em 0; /* Adjusted padding */
+    border-radius: 0.4em; /* Adjusted border-radius */
+    box-shadow: 0 0.985em 1.875em rgba(1, 87, 185, 0.2); /* Adjusted box-shadow */
 }
+  
+  .timer-display {
+    position: relative;
+    width: 100%; /* Adjusted width */
+    background-color: #3c98ff;
+    padding: 0.3125em 0; /* Adjusted padding */
+    font-family: "Roboto Mono", monospace;
+    color: #f0f9ff;
+    font-size: 1em; /* Adjusted font-size */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0.2em; /* Adjusted border-radius */
+    box-shadow: 0 0.5em 1em rgba(1, 87, 185, 0.2);
+  }
+  
+  .buttons {
+    width: 100%; /* Adjusted width */
+    margin: 0.95em auto 0 auto; /* Adjusted margin */
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .buttons button {
+    font-size: 0.56em; /* Adjusted font-size */
+    background-color: #dbe9ff;
+    color: #3c98ff;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    border-radius: 0.25em; /* Adjusted border-radius */
+    padding: 0.625em 0.9375em; /* Adjusted padding */
+    cursor: pointer;
+    outline: none;
+  }
+  
+  #start-timer {
+    background-color: #dbe9ff;
+    color: #3c98ff;
+  }
+  
