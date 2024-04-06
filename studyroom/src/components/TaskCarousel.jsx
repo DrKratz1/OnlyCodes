@@ -6,6 +6,7 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md"
 
 function TaskCarousel() {
   const [username, _] = useLocalStorage("username", null)
+  const [, setCurrentTask] = useLocalStorage("currentTask", null)
   const [user, setUser] = useState("")
   const [task, setTask] = useState([])
 
@@ -43,6 +44,10 @@ function TaskCarousel() {
     fetchData()
   }, [username])
 
+  function handleTaskClick(name) {
+    setCurrentTask(name)
+  }
+
   console.log(user, task)
   return (
     <>
@@ -61,7 +66,9 @@ function TaskCarousel() {
           {task.map((item) => (
             <div className="w-[320px] inline-block p-2">
               <a href="/Task">
-                <button className="p-0 bg-transparent">
+                <button
+                  className="p-0 bg-transparent"
+                  onClick={() => handleTaskClick(item.name)}>
                   <img
                     className="cursor-pointer hover:scale-105
                 ease-in-out duration-100"
