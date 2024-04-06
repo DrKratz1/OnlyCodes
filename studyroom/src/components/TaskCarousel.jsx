@@ -29,17 +29,17 @@ function TaskCarousel() {
           scroll-smooth">
           {data.map((item) => (
             <div className="w-[320px] inline-block p-2">
-              <a href="/NewTask">
-              <button className="p-0 bg-transparent">
-                <img
-                  className="cursor-pointer hover:scale-105
+              <a href="/Task">
+                <button className="p-0 bg-transparent">
+                  <img
+                    className="cursor-pointer hover:scale-105
                 ease-in-out duration-100"
-                  src={item.img}
-                  alt="/"
-                  draggable="false"
-                />
-                <h2 className="text-2xl text-white font-bold">{item.id}</h2>
-              </button>
+                    src={item.img}
+                    alt="/"
+                    draggable="false"
+                  />
+                  <h2 className="text-2xl text-white font-bold">{item.id}</h2>
+                </button>
               </a>
             </div>
           ))}
