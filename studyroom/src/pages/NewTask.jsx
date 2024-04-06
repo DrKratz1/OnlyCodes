@@ -1,29 +1,24 @@
-import React from "react"
-import { Link } from "react-router-dom"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
-import Stopwatch from "../components/Stopwatch"
-import FinishTaskButton from "../components/FinishTaskButton"
-import { MdNotAccessible } from "react-icons/md"
-import NotesSection from "../components/NotesSection"
+import React from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Stopwatch from "../components/Stopwatch";
+import FinishTaskButton from "../components/FinishTaskButton";
+import NotesSection from "../components/NotesSection";
 
 function NewTask() {
   return (
     <div>
       <Header title="Task 1" />
-      <h1>
+      <div className="Container">
         <Stopwatch />
-      </h1>
-      <div>
-      <NotesSection/>
+        <div className="NotesContainer">
+          <NotesSection />
+          <FinishTaskButton />
+        </div>
       </div>
-      <FinishTaskButton/>
-
-      <div>
-        <Footer />
-      </div>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default NewTask
+export default NewTask;
