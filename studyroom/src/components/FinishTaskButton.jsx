@@ -6,7 +6,7 @@ function FinishTaskButton() {
         <div>
             <a href="/">
                 <button className="css-button-3d--blue">
-                    Finish Task!
+                    Save Task!
                 </button>
             </a>
         </div>
