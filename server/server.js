@@ -3,9 +3,7 @@ const express = require("express")
 const cors = require("cors")
 const mongoose = require("mongoose")
 const userRoutes = require("./routes/userRoutes")
-const taskRoutes = require("./routes/taskRoutes")
 const User = require("./models/User")
-const Task = require("./models/Task")
 require("dotenv").config() // Covered later
 
 // Create an Express application
@@ -20,7 +18,6 @@ app.use(express.json())
 // Note that the default route is /api/users
 // i.e. full route is localhost:5000/api/users/signup
 app.use("/api/users", userRoutes)
-app.use("/api/tasks", taskRoutes)
 
 app.get("/", (req, res) => {
   res.send("Hello Worldy")
@@ -35,7 +32,24 @@ app.get("/api/users", async (req, res) => {
   }
 })
 
+// updating tasks in user
+app.put("/api/users", async (req, res) => {
+  try {
+    const user = await User.findOneAndUpdate(
+      { username: req.body.username },
+      { $set: { task: req.body.task } }
+    )
 
+    if (!user) {
+      return res.status(400).json({ message: "Product not found" })
+    }
+
+    const updatedUser = await User.findOne({ username: req.body.username })
+    res.status(200).json(updatedUser)
+  } catch (error) {
+    res.status(500).json({ message: error.message })
+  }
+})
 
 app.get("/api/user/:id", async (req, res) => {
   try {
@@ -46,8 +60,6 @@ app.get("/api/user/:id", async (req, res) => {
     res.status(500).json({ message: error.message })
   }
 })
-
-
 
 // Connect to database (covered later)
 mongoose
