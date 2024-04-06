@@ -26,6 +26,7 @@ const userSchema = new mongoose.Schema({
         seconds: 0,
         milliseconds: 0,
         notes: "",
+        src: "/assets/TaskPic1.jpeg",
       },
       {
         name: "Task 2",
@@ -34,6 +35,7 @@ const userSchema = new mongoose.Schema({
         seconds: 0,
         milliseconds: 0,
         notes: "",
+        src: "/assets/TaskPic2.jpeg",
       },
       {
         name: "Task 3",
@@ -42,6 +44,7 @@ const userSchema = new mongoose.Schema({
         seconds: 0,
         milliseconds: 0,
         notes: "",
+        src: "/assets/TaskPic3.jpeg",
       },
       {
         name: "Task 4",
@@ -50,6 +53,7 @@ const userSchema = new mongoose.Schema({
         seconds: 0,
         milliseconds: 0,
         notes: "",
+        src: "/assets/TaskPic4.jpeg",
       },
       {
         name: "Task 5",
@@ -58,6 +62,7 @@ const userSchema = new mongoose.Schema({
         seconds: 0,
         milliseconds: 0,
         notes: "",
+        src: "/assets/TaskPic5.jpeg",
       },
       {
         name: "Task 6",
@@ -66,10 +71,10 @@ const userSchema = new mongoose.Schema({
         seconds: 0,
         milliseconds: 0,
         notes: "",
+        src: "/assets/TaskPic6.jpeg",
       },
     ],
   },
-
 })
 
 // export the User schema
