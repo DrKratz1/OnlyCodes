@@ -49,7 +49,7 @@ function Login() {
     <div>
       <h1 className="flex text-3xl my-8 justify-center text-white">Login</h1>
       <form onSubmit={handleSubmit} className="justify-center">
-        <div className="flex flex-col mb-5 mx-auto items-center">
+        <div className="flex flex-col mb-5 mx-auto items-end">
           <div className="pb-2">
             <label className="text-white">Username: </label>
             <input
