@@ -67,14 +67,6 @@ const userSchema = new mongoose.Schema({
         milliseconds: 0,
         notes: "",
       },
-      {
-        name: "Task 7",
-        hours: 0,
-        minutes: 0,
-        seconds: 0,
-        milliseconds: 0,
-        notes: "",
-      },
     ],
   },
 
