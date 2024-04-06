@@ -10,7 +10,7 @@ function NoteTextbox() {
 
   return (
     <div>
-    <h2 className = "NoteHeader">Notes!</h2>
+    <h2 className = "NoteHeader">Write your notes here!</h2>
 
       <textarea
         value={note}

@@ -29,6 +29,7 @@ function TaskCarousel() {
           scroll-smooth">
           {data.map((item) => (
             <div className="w-[320px] inline-block p-2">
+              <a href="/NewTask">
               <button className="p-0 bg-transparent">
                 <img
                   className="cursor-pointer hover:scale-105
@@ -39,6 +40,7 @@ function TaskCarousel() {
                 />
                 <h2 className="text-2xl text-white font-bold">{item.id}</h2>
               </button>
+              </a>
             </div>
           ))}
         </div>

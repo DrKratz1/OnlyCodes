@@ -1,7 +1,9 @@
 
 .NoteHeader{
-
+  font-family: "Inter",sans-serif;
     font-size: larger;
+    color: black;
+    font-weight: bold;
   }
 
   textarea {
@@ -9,12 +11,13 @@
     width: 100%;
     max-width: 500px;
     min-height: 150px;
-    background: #fbf4ed;
-    transform: translate(100%, 25%);
+    background: #f6e7d9;
+    transform: translate(100%, 55%);
     color: #333;
     padding: 120px;
     margin: 20px auto; 
     outline: none;
     border-radius: 5px;
     font: bold;
+    box-shadow: 0 0.985em 10em rgba(241, 244, 60, 0.2); /* Adjusted box-shadow */
   }
