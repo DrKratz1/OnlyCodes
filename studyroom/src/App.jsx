@@ -11,21 +11,24 @@ import Footer from "./components/Footer.jsx"
 import Signup from "./pages/Signup.jsx"
 import Index from "./pages/Index.jsx"
 import Login from "./pages/Login.jsx"
-import AddTask from "./pages/AddTask.jsx"
+import Header from "./components/Header.jsx"
+import TaskBoxes from "./components/TaskBoxes.jsx"
+import NewTask from "./pages/NewTask.jsx"
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route exact path="/" element={<Index />} />
-
+        <Route exact path ="/Header" element = {<Header/>} />
         <Route exact path="/login" element={<Login />} />
 
         <Route exact path="/signup" element={<Signup />} />
 
         <Route exact path="/sidebar" element={<Sidebar />} />
 
-        <Route exact path="/add_task" element={<AddTask />} />
+        <Route exact path="/TaskBoxes" element={<TaskBoxes />} />
+        <Route exact path="/NewTask" element={<NewTask />} />
       </Routes>
     </Router>
   )

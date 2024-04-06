@@ -2,12 +2,17 @@ import React from "react"
 import { Link } from "react-router-dom"
 import SignupForm from "../components/SignupForm"
 import Sidebar from "../components/Sidebar"
+import Footer from "../components/Footer"
 
 function Signup() {
   return (
     <div>
       <Sidebar />
-      <SignupForm />
+      <div id = "rectangle" className = "flex justify-center items-center rounded-xl border-4 border-violet-300 shadow-xl" >
+        <SignupForm />
+      </div>
+
+      <Footer />
     </div>
   )
 }

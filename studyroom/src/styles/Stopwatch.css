@@ -1,0 +1,47 @@
+.container {
+    position:absolute;
+    transform: translate(-50%, -20%);
+    left: 50%;
+    top: 20%;
+    background-color: #161B33;
+    width: 90%; /* Set width to 100% */
+    max-width: 20%; /* Adjusted max-width to 15% of the viewport width */
+    padding: 0.9375em 0; /* Adjusted padding */
+    border-radius: 0.4em; /* Adjusted border-radius */
+    box-shadow: 0 0.985em 10em rgba(55, 0, 255, 0.2); /* Adjusted box-shadow */
+}
+  
+  .timer-display {
+    position: relative;
+    width: 100%; /* Adjusted width */
+    background-color: #161B33;
+    padding: 0.3125em 0; /* Adjusted padding */
+    font-family: "Roboto Mono", monospace;
+    color: #f0f9ff;
+    font-size: 1.5em; /* Adjusted font-size */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Inter",sans-serif;
+    border-radius: 0.2em; /* Adjusted border-radius */
+  }
+  
+  .buttons {
+    width: 100%; /* Adjusted width */
+    margin: 0.95em auto 0 auto; /* Adjusted margin */
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .buttons button {
+    font-size: 1em; /* Adjusted font-size */
+    background-color: #0d0c1d;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-weight:600;
+    color: white;
+    border-radius: 0.25em; /* Adjusted border-radius */
+    padding: 0.625em 0.9375em; /* Adjusted padding */
+    cursor: pointer;
+    outline: none;
+  }
