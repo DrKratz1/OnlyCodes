@@ -47,27 +47,27 @@ function Login() {
 
   return (
     <div>
-      <h1 className="flex text-3xl my-8 justify-center">Login</h1>
+      <h1 className="flex text-3xl my-8 justify-center text-white">Login</h1>
       <form onSubmit={handleSubmit} className="justify-center">
         <div className="flex flex-col mb-5 mx-auto items-center">
           <div className="pb-2">
-            <label>Username: </label>
+            <label className="text-white">Username: </label>
             <input
               type="text"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               required
-              className="bg-transparent border-2 rounded-md focus:outline-green-500"
+              className="bg-transparent border-2 rounded-md focus:outline-green-500 text-white"
             />
           </div>
           <div className="pb-2">
-            <label>Password: </label>
+            <label className="text-white">Password: </label>
             <input
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-              className="bg-transparent border-2 rounded-md focus:outline-green-500"
+              className="bg-transparent border-2 rounded-md focus:outline-green-500 text-white"
             />
           </div>
           <button

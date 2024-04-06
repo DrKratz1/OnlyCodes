@@ -8,7 +8,7 @@ function Signup() {
   return (
     <div>
       <Sidebar />
-      <div id = "rectangle" className = "flex justify-center items-center rounded-xl border-4 border-blue-900" >
+      <div id = "rectangle" className = "flex justify-center items-center rounded-xl border-4 border-violet-300 shadow-xl" >
         <SignupForm />
       </div>
 
