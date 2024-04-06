@@ -13,14 +13,14 @@ import Index from "./pages/Index.jsx"
 import Login from "./pages/Login.jsx"
 import Header from "./components/Header.jsx"
 import TaskBoxes from "./components/TaskBoxes.jsx"
-import NewTask from "./pages/NewTask.jsx"
+import Task from "./pages/Task.jsx"
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route exact path="/" element={<Index />} />
-        <Route exact path ="/Header" element = {<Header/>} />
+        <Route exact path="/Header" element={<Header />} />
         <Route exact path="/login" element={<Login />} />
 
         <Route exact path="/signup" element={<Signup />} />
@@ -28,7 +28,7 @@ function App() {
         <Route exact path="/sidebar" element={<Sidebar />} />
 
         <Route exact path="/TaskBoxes" element={<TaskBoxes />} />
-        <Route exact path="/NewTask" element={<NewTask />} />
+        <Route exact path="/Task" element={<Task />} />
       </Routes>
     </Router>
   )

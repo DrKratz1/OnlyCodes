@@ -6,7 +6,6 @@ import Footer from "../components/Footer"
 import TaskBoxes from "../components/TaskBoxes"
 import { useLocalStorage } from "../hooks/localStorage"
 import TaskCarousel from "../components/TaskCarousel"
-import FinishTaskButton from "../components/FinishTaskButton"
 
 function Index() {
   const [user, _] = useLocalStorage("username", null)
@@ -15,7 +14,6 @@ function Index() {
     <div className="overflow-x-hidden">
       <Header title='"The only time success comes before work is in the dictionary"' />
       <TaskCarousel />
-      <FinishTaskButton/>
       <Footer />
     </div>
   )

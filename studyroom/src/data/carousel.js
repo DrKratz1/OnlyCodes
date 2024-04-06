@@ -1,7 +1,7 @@
 export const data = [
   {
     id: 1,
-    img: "/assets/TaskPic1.jpeg",
+    img: "/assets/TaskPic4.jpeg",
   },
   {
     id: 2,
@@ -13,14 +13,14 @@ export const data = [
   },
   {
     id: 4,
-    img: "/assets/TaskPic4.jpeg",
+    img: "/assets/TaskPic1.jpeg",
   },
   {
     id: 5,
-    img: "/assets/TaskPic5.jpeg",
+    img: "/assets/TaskPic6.jpeg",
   },
   {
     id: 6,
-    img: "/assets/TaskPic6.jpeg",
+    img: "/assets/WallpaperPink.jpeg",
   },
 ]

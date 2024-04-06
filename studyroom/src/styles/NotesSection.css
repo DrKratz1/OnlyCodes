@@ -1,23 +1,28 @@
+.NoteHeader {
+  font-family: "Inter", sans-serif;
+  font-size: larger;
+  color: black;
+  font-weight: bold;
+  text-align: center; 
+}
 
-.NoteHeader{
-  font-family: "Inter",sans-serif;
-    font-size: larger;
-    color: black;
-    font-weight: bold;
-  }
+.NotesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+}
 
-  textarea {
-    position: relative;
-    width: 100%;
-    max-width: 500px;
-    min-height: 150px;
-    background: #f6e7d9;
-    transform: translate(100%, 55%);
-    color: #333;
-    padding: 120px;
-    margin: 20px auto; 
-    outline: none;
-    border-radius: 5px;
-    font: bold;
-    box-shadow: 0 0.985em 10em rgba(241, 244, 60, 0.2); /* Adjusted box-shadow */
-  }
+textarea {
+  width: 100%;
+  max-width: 500px;
+  min-height: 150px;
+  background: #f6e7d9;
+  color: #333;
+  padding: 10px;
+  margin-bottom: 20px;
+  outline: none;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0 0.985em 10em rgba(241, 244, 60, 0.2);
+}

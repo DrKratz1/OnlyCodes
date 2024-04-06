@@ -4,44 +4,43 @@
     left: 50%;
     top: 20%;
     background-color: #161B33;
-    width: 90%; /* Set width to 100% */
-    max-width: 20%; /* Adjusted max-width to 15% of the viewport width */
-    padding: 0.9375em 0; /* Adjusted padding */
-    border-radius: 0.4em; /* Adjusted border-radius */
-    box-shadow: 0 0.985em 10em rgba(55, 0, 255, 0.2); /* Adjusted box-shadow */
+    width: 90%;
+    max-width: 20%;
+    padding: 0.9375em 0;
+    border-radius: 0.4em;
 }
   
   .timer-display {
     position: relative;
-    width: 100%; /* Adjusted width */
+    width: 100%;
     background-color: #161B33;
-    padding: 0.3125em 0; /* Adjusted padding */
+    padding: 0.3125em 0;
     font-family: "Roboto Mono", monospace;
     color: #f0f9ff;
-    font-size: 1.5em; /* Adjusted font-size */
+    font-size: 1.5em;
     display: flex;
     align-items: center;
     justify-content: space-around;
     font-family: "Inter",sans-serif;
-    border-radius: 0.2em; /* Adjusted border-radius */
+    border-radius: 0.2em;
   }
   
   .buttons {
-    width: 100%; /* Adjusted width */
-    margin: 0.95em auto 0 auto; /* Adjusted margin */
+    width: 100%; 
+    margin: 0.95em auto 0 auto;
     display: flex;
     justify-content: space-around;
   }
   
   .buttons button {
-    font-size: 1em; /* Adjusted font-size */
+    font-size: 1em;
     background-color: #0d0c1d;
     border: none;
     font-family: "Inter", sans-serif;
     font-weight:600;
     color: white;
-    border-radius: 0.25em; /* Adjusted border-radius */
-    padding: 0.625em 0.9375em; /* Adjusted padding */
+    border-radius: 0.25em;
+    padding: 0.625em 0.9375em;
     cursor: pointer;
     outline: none;
   }
