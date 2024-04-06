@@ -9,6 +9,7 @@ import { useLocalStorage } from "../hooks/localStorage"
 
 function Task() {
   const [username, _] = useLocalStorage("username", null)
+  const [currentTask] = useLocalStorage("currentTask", null)
   const [user, setUser] = useState("")
   const [task, setTask] = useState([])
 
@@ -38,7 +39,7 @@ function Task() {
 
   return (
     <div>
-      <Header title="Task 1" />
+      <Header title={currentTask} />
       <div className="Container">
         <Stopwatch />
         <div className="NotesContainer">

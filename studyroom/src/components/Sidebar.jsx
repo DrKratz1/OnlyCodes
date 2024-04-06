@@ -16,10 +16,6 @@ function Sidebar() {
       <a href="/signup">
         <button className=" bg-yellow-50 px-4 py-2 rounded-lg">Sign Up</button>
       </a>
-
-      <a href="/add_task">
-        <button className=" bg-yellow-50 px-4 py-2 rounded-lg">Add Task</button>
-      </a>
     </div>
   )
 }
