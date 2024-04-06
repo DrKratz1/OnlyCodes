@@ -7,7 +7,7 @@ import FinishTaskButton from "../components/FinishTaskButton"
 import { MdNotAccessible } from "react-icons/md"
 import NotesSection from "../components/NotesSection"
 
-function NewTask() {
+function Task() {
   return (
     <div>
       <Header title="Task 1" />
@@ -15,9 +15,9 @@ function NewTask() {
         <Stopwatch />
       </h1>
       <div>
-      <NotesSection/>
+        <NotesSection />
       </div>
-      <FinishTaskButton/>
+      <FinishTaskButton />
 
       <div>
         <Footer />
@@ -26,4 +26,4 @@ function NewTask() {
   )
 }
 
-export default NewTask
+export default Task
