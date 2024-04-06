@@ -15,6 +15,69 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+
+  task: {
+    type: [Object],
+    default: [
+      {
+        name: "Task 1",
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+        milliseconds: 0,
+        notes: "",
+      },
+      {
+        name: "Task 2",
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+        milliseconds: 0,
+        notes: "",
+      },
+      {
+        name: "Task 3",
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+        milliseconds: 0,
+        notes: "",
+      },
+      {
+        name: "Task 4",
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+        milliseconds: 0,
+        notes: "",
+      },
+      {
+        name: "Task 5",
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+        milliseconds: 0,
+        notes: "",
+      },
+      {
+        name: "Task 6",
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+        milliseconds: 0,
+        notes: "",
+      },
+      {
+        name: "Task 7",
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+        milliseconds: 0,
+        notes: "",
+      },
+    ],
+  },
+
 })
 
 // export the User schema
